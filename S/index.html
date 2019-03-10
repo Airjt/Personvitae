@@ -8,6 +8,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="./lib/swiper.min.css">
+    <!-- Start WOWSlider.com HEAD section -->
+    <!-- add to the <head> of your page -->
+    <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+    <script type="text/javascript" src="engine1/jquery.js"></script>
+    <!-- End WOWSlider.com HEAD section -->
 </head>
 
 <body>
@@ -18,35 +23,58 @@
                 <!-- 第一个页面主页-->
                 <div class="firstpage swiper-slide">
                     <div class="imgbox">
-                        <img src="./img/57749465_p0.png" alt="">
+                        <div id="wowslider-container1">
+                            <div class="ws_images">
+                                <ul>
+                                    <li><img src="data1/images/50f53e28bcc0e41fb6aa8a96ddb0263f.jpg" alt="50f53e28bcc0e41fb6aa8a96ddb0263f"
+                                            title="50f53e28bcc0e41fb6aa8a96ddb0263f" id="wows1_0" /></li>
+                                    <li><img src="data1/images/68b1e11e168ff94fef0d28ebf27b20ca.jpg" alt="javascript slideshow"
+                                            title="68b1e11e168ff94fef0d28ebf27b20ca" id="wows1_1" /></a></li>
+                                    <li><img src="data1/images/1323245f0e3f364ab54fa9d62eb045fc.jpg" alt="1323245f0e3f364ab54fa9d62eb045fc"
+                                            title="1323245f0e3f364ab54fa9d62eb045fc" id="wows1_2" /></li>
+                                </ul>
+                            </div>
+                            <div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">bootstrap
+                                    carousel example</a> by WOWSlider.com v8.8</div>
+                            <div class="ws_shadow"></div>
+                        </div>
+
                     </div>
                     <div class="personbox">
+                        <h1>life is fantastic</h1>
                         <p>我叫邵家栋</p>
                         <p>一名前端开发工程师</p>
+                        <p>905270094@qq.com</p>
                     </div>
                 </div>
                 <!-- 个人介绍 -->
                 <div class="secondpage swiper-slide">
+                    <div class="imgbox2">
+                        <img src="./img/bg2.jpg" alt="">
+                    </div>
                     <div class="headimg">
                     </div>
                     <div class="message">
-                        <p>  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
-                        <p>  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
-                        <p>  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
-                        <p>  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+                        <p> xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+                        <p> xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+                        <p> xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+                        <p> xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
                     </div>
                 </div>
-                <div class="thirdpage swiper-slide"></div>
-                <div class="fourthpage swiper-slide"></div>
-            </div>
+                <div class="thirdpage swiper-slide">
 
+                </div>
+                <div class="fourthpage swiper-slide"></div>
+                
+            </div>
+            <div class="swiper-pagination"></div>
         </div>
 
     </div>
     <script src="./lib/swiper.min.js"></script>
-    <script src="./js/index.js">
-
-    </script>
+    <script src="./js/index.js"></script>
+    <script type="text/javascript" src="engine1/wowslider.js"></script>
+    <script type="text/javascript" src="engine1/script.js"></script>
 </body>
 
 </html>

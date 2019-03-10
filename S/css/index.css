@@ -4,11 +4,11 @@
 
 html, body {
   width: 100%;
-  height: 100%; 
-  font-family:Arial,Helvetica,sans-serif;
-  font-size:1em;
-  vertical-align:middle;
-  font-weight:normal;}
+  height: 100%;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 1em;
+  vertical-align: middle;
+  font-weight: normal; }
 
 .swiper-container {
   width: 100%;
@@ -22,70 +22,92 @@ html, body {
   height: 100%;
   width: 100%;
   background-color: #000; }
-.personbox{
+
+.personbox {
   position: relative;
-  height: 220px;
-  width: 500px;
-  background: #ccc;
-  opacity: 0.5;
+  height: 250px;
+  width: 600px;
   top: 50%;
   left: 50%;
-  margin-left: -250px;
+  margin-left: -300px;
   margin-top: -120px;
-  padding: 10px 20px;
-  border-radius: 5px;
-}
-.firstpage .imgbox img{
-  
-  height: 100%;
+  padding: 0px 20px;
+  border-radius: 20px;
+  z-index: 10; }
+
+.personbox:hover {
+  box-shadow: 0px 0px 40px #fff;
+  transition: 1s; }
+
+.firstpage .imgbox {
+  width: 100%;
   float: left;
-  opacity: 0.8;
-}
-.personbox p{
+  opacity: 0.5; }
+
+.personbox h1 {
+  position: absolute;
+  width: 400px;
+  font-size: 40px;
+  color: white;
+  left: 50%;
+  top: 30px;
+  margin-left: -200px;
+  text-align: center;
+  letter-spacing: 5px; }
+
+.personbox p {
+  position: relative;
   width: 400px;
   font-size: 24px;
   font-family: 'Courier New', Courier, monospace;
-  margin: 10px auto;
+  margin: 5px auto;
   letter-spacing: 5px;
   text-align: center;
-  top: 100px;
-}
+  top: 120px;
+  color: white; }
+
 .secondpage {
   position: relative;
   height: 100%;
   width: 100%;
   background-color: #555; }
-  .secondpage .headimg{
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-image: url(../img/57749465_p0.png);
-    left: 50%;
-    top: 50%;
-    margin-left: -50px;
-    margin-top: -120px;
-    border-radius: 50%;
 
-  }
-  .headimg:hover{
-    box-shadow: 0 0 10px #f00;
-    transform: scale(1.1);
-    transition: 2s;
-  }
-  .secondpage .message{
- position: absolute;
- border-radius: 10px;
- width: 600px;
- height: 200px;
- left: 50%;
- top: 50%;
- margin-left: -300px;
-    text-align: center;
-}
-.message p{
-  font-size: 18px;
-  color: #ccc;
-}
+.secondpage .imgbox2 img {
+  width: 100%;
+  height: 1200px;
+  float: left;
+  opacity: 0.5; }
+
+.secondpage .headimg {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-image: url(../img/57749465_p0.png);
+  left: 50%;
+  top: 50%;
+  margin-left: -100px;
+  margin-top: -300px;
+  border-radius: 50%; }
+
+.headimg:hover {
+  box-shadow: 0 0 10px #f00;
+  transform: scale(1.1);
+  transition: 2s; }
+
+.secondpage .message {
+  position: absolute;
+  border-radius: 10px;
+  width: 600px;
+  height: 200px;
+  left: 50%;
+  top: 50%;
+  margin-left: -300px;
+  text-align: center; }
+
+.message p {
+  font-size: 24px;
+  color: #ccc; }
+
 .thirdpage {
   height: 100%;
   width: 100%;
@@ -95,5 +117,19 @@ html, body {
   height: 100%;
   width: 100%;
   background-color: #fff; }
+
+/*# sourceMappingURL=index.css.map */
+/* swiperyangshi*/
+.swiper-pagination {
+  width: 100px; }
+
+.swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  background: #82f311;
+  margin: 0 20px !important;
+  opacity: 1;
+  position: relative;
+  z-index: 100; }
 
 /*# sourceMappingURL=index.css.map */
