@@ -10,7 +10,87 @@ html, body {
   font-size:1em;
   vertical-align:middle;
   font-weight:normal;}
+.openbtn{
+  position: fixed;
+  left: 30px;
+  top:30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: 40;
+  background-color: beige;
+  .icon {
+    position: absolute;
+    width: 35px;
+    height: 4px;
+    border-radius: 10px;
+    background-color: #555;
+    left: 9px;
+    top: 24px;
+    
 
+  }
+}
+.icon:before,.icon:after{
+  content:"";
+  position: absolute;
+  width: 35px;
+  height: 4px;
+  border-radius: 10px;
+  background-color: #555;
+}
+.icon:before{
+  top: -10px;
+}
+.icon:after{
+  top: 9px;
+}
+
+.navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  background-color: #ddd;
+  z-index: 20;
+  overflow: hidden;
+  background-color:rgba(204, 204, 204, 0.425);
+  .daohanglan{
+    position: absolute;
+    top: 200px;
+    
+    div{
+      width: 300px;
+      height: 80px;
+      padding: 0 40px;
+      font-size: 24px;
+      color: rgb(49, 49, 49);
+      line-height: 80px;
+      cursor: pointer;
+      }
+    div:hover{
+        background: #4594d8b4;
+        transition: 3s;
+    }
+    
+  }
+  .lianxi{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: #555;
+    top: 700px;
+    a{
+      display: block;
+      width: 20px;
+      height: 20px;
+    }
+    .qq{
+      background-image: url(../img/QQ_48px_1230490_easyicon.net.png);
+    }
+  }
+}
 .swiper-container {
   width: 100%;
   height: 100%; }
@@ -121,19 +201,19 @@ html, body {
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    border: 1px solid #000;
-    border-radius: 20px;
+    
     .leftbox{
       width: 200px;
       height: 400px;
-      margin-left:  60px;
+      margin-left:  80px;
       margin-top: 30px;
       h1{
         font-size: 50px;
+        margin-bottom: -20px;
       }
       p{
         margin-top: 35px;
-        font-size: 24px;
+        font-size: 34px;
 
       }
     }
@@ -174,15 +254,15 @@ html, body {
       }
       .jsbox{
         width: 250px;
-        background-color: burlywood;
+        background-color: rgb(184, 97, 26);
       }
       .psbox{
         width: 330px;
-        background-color: burlywood;
+        background-color: rgb(48, 36, 219);
       }
       .vuebox{
         width: 230px;
-        background-color: burlywood;
+        background-color: rgb(190, 43, 112);
       }
       }
     }
