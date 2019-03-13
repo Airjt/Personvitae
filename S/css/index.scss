@@ -75,22 +75,62 @@ html, body {
     }
     
   }
+  
   .lianxi{
     position: absolute;
     width: 300px;
     height: 300px;
-    background-color: #555;
     top: 700px;
+      
     a{
       display: block;
-      width: 20px;
-      height: 20px;
+      float: left;
+      width: 40px;
+      height: 40px;
+      background-size: 100%;
+      margin-top: 220px;
+      margin-left: 48px;
+      background-repeat: no-repeat;
+      span{
+        position: absolute;
+        display: block;
+        left: 56px;
+        top: 0px;
+        width: 200px;
+        height: 200px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        opacity: 0;
+      }
+      .qqer{
+        background-image: url(../img/qqerweima.jpg);
+      }
+      .weixinger{
+        background-image: url(../img/weixingerweima.jpg);
+      }
     }
     .qq{
       background-image: url(../img/QQ_48px_1230490_easyicon.net.png);
+      }
+    .weixing{
+      background-image: url(../img/weixinmendian_Wechat_58.854271356784px_1226623_easyicon.net.png);
+      
+    }
+    .github{
+      background-image: url(../img/git_logo_media_social_48px_1212972_easyicon.net.png);
+      
     }
   }
 }
+.qq:hover .qqer{
+  opacity: 1;
+  transition-duration:1s;
+}
+.weixing:hover .weixinger{
+  opacity: 1;
+  transition-duration:1s;
+}
+
 .swiper-container {
   width: 100%;
   height: 100%; }
@@ -277,9 +317,7 @@ html, body {
 /*# sourceMappingURL=index.css.map */
 
 /* swiperyangshi*/
-.swiper-pagination-bullets{
-  
-}
+
 .swiper-pagination1:after{
   position: absolute;
   border-right: 1px dashed #8c7576;

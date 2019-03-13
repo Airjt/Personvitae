@@ -10,5 +10,8 @@ var swiper = new Swiper('.swiper-container',{
 $(document).ready(function(){
   $(".openbtn").click(function(){
     $(".navbar").animate({width:'toggle'},350);
-  })
+  });
+  // $(".qq").mouseover(function(){
+  //   $(".qqer").fadeToggle();
+  // })
 })
