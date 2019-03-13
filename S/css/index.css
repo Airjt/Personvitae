@@ -3,6 +3,9 @@
   padding: 0;
   margin: 0; }
 
+a {
+  text-decoration: none; }
+
 html, body {
   width: 100%;
   height: 100%;
@@ -44,10 +47,11 @@ html, body {
   top: 9px; }
 
 .navbar {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
-  width: 300px;
+  width: 280px;
   height: 100%;
   background-color: #ddd;
   z-index: 20;
@@ -71,7 +75,7 @@ html, body {
     position: absolute;
     width: 300px;
     height: 300px;
-    top: 700px; }
+    bottom: 50px; }
     .navbar .lianxi a {
       display: block;
       float: left;
@@ -79,12 +83,12 @@ html, body {
       height: 40px;
       background-size: 100%;
       margin-top: 220px;
-      margin-left: 48px;
+      margin-left: 42px;
       background-repeat: no-repeat; }
       .navbar .lianxi a span {
         position: absolute;
         display: block;
-        left: 56px;
+        left: 40px;
         top: 0px;
         width: 200px;
         height: 200px;
@@ -95,6 +99,11 @@ html, body {
         background-image: url(../img/qqerweima.jpg); }
       .navbar .lianxi a .weixinger {
         background-image: url(../img/weixingerweima.jpg); }
+      .navbar .lianxi a .giter {
+        text-align: center;
+        line-height: 200px;
+        font-size: 20px;
+        color: #3e7cf0; }
     .navbar .lianxi .qq {
       background-image: url(../img/QQ_48px_1230490_easyicon.net.png); }
     .navbar .lianxi .weixing {
@@ -109,6 +118,10 @@ html, body {
 .weixing:hover .weixinger {
   opacity: 1;
   transition-duration: 1s; }
+
+.github:hover .giter {
+  opacity: 1;
+  transition: 1s; }
 
 .swiper-container {
   width: 100%;
@@ -322,7 +335,6 @@ html, body {
     -moz-box-shadow: 0 0 0 10px rgba(37, 143, 184, 0);
     -ms-box-shadow: 0 0 0 10px rgba(37, 143, 184, 0);
     background: white; } }
-/* */
 .swiper-pagination1 .swiper-pagination-bullet:after {
   width: 6px;
   height: 6px;

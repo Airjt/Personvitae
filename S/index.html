@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="./lib/swiper.min.css">
+    <script src="./lib/swiper.min.js"></script>
     <!-- Start WOWSlider.com HEAD section -->
     <!-- add to the <head> of your page -->
     <link rel="stylesheet" type="text/css" href="engine1/style.css" />
@@ -21,23 +22,23 @@
     </div>
     <div class="navbar" style="">
         <div class="daohanglan">
-            <div class="shouye">首页</div>
-            <div class="dier">个人信息</div>
-            <div class="disan">技能详情</div>
-            <div class="disi">其他</div>
+            <a class="btn0" href="#"><div class="shouye">首页</div></a>
+            <a class="btn1" href="#"><div class="dier">个人信息</div></a>
+            <a class="btn2" href="#"><div class="disan">技能详情</div></a>
+            <a class="btn3" href="#"><div class="disi">其他</div></a>
         </div>
 
         <div class="lianxi">
-            <a href="" class="qq"><span class="qqer"></span></a>
-            <a href="" class="weixing"><span class="weixinger"></span></a>
-            <a href="" class="github"><span class="giter"></span></a>
+            <a href="#" class="qq"><span class="qqer"></span></a>
+            <a href="#" class="weixing"><span class="weixinger"></span></a>
+            <a href="#" class="github"><span class="giter">https://github.com/Airjt</span></a>
         </div>
     </div>
     <div class="mainbox">
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <!-- 第一个页面主页-->
-                <div class="firstpage swiper-slide">
+                <div class="firstpage swiper-slide" data-hash="slide1">
                     <div class="imgbox">
                         <div id="wowslider-container1">
                             <div class="ws_images">
@@ -64,7 +65,7 @@
                     </div>
                 </div>
                 <!-- 个人介绍 -->
-                <div class="secondpage swiper-slide">
+                <div class="secondpage swiper-slide" data-hash="slide2">
                     <div class="imgbox2">
                         <img src="./img/bg2.jpg" alt="">
                     </div>
@@ -77,7 +78,7 @@
                         <p> xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
                     </div>
                 </div>
-                <div class="thirdpage swiper-slide">
+                <div class="thirdpage swiper-slide" data-hash="slide3">
 
                     <div class="killbox">
                         <div class="leftbox">
@@ -109,7 +110,7 @@
 
                     </div>
                 </div>
-                <div class="fourthpage swiper-slide"></div>
+                <div class="fourthpage swiper-slide" data-hash="slide4"></div>
 
             </div>
             <div class="swiper-pagination swiper-pagination1"></div>
@@ -117,7 +118,7 @@
         </div>
 
     </div>
-    <script src="./lib/swiper.min.js"></script>
+    
     <script src="./js/index.js"></script>
     <script type="text/javascript" src="engine1/wowslider.js"></script>
     <script type="text/javascript" src="engine1/script.js"></script>
