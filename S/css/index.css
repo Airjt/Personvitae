@@ -51,7 +51,7 @@ html, body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 280px;
+  width: 300px;
   height: 100%;
   background-color: #ddd;
   z-index: 20;
@@ -75,7 +75,7 @@ html, body {
     position: absolute;
     width: 300px;
     height: 300px;
-    bottom: 50px; }
+    top: 700px; }
     .navbar .lianxi a {
       display: block;
       float: left;
@@ -83,12 +83,12 @@ html, body {
       height: 40px;
       background-size: 100%;
       margin-top: 220px;
-      margin-left: 42px;
+      margin-left: 48px;
       background-repeat: no-repeat; }
       .navbar .lianxi a span {
         position: absolute;
         display: block;
-        left: 40px;
+        left: 56px;
         top: 0px;
         width: 200px;
         height: 200px;
@@ -99,11 +99,6 @@ html, body {
         background-image: url(../img/qqerweima.jpg); }
       .navbar .lianxi a .weixinger {
         background-image: url(../img/weixingerweima.jpg); }
-      .navbar .lianxi a .giter {
-        text-align: center;
-        line-height: 200px;
-        font-size: 20px;
-        color: #3e7cf0; }
     .navbar .lianxi .qq {
       background-image: url(../img/QQ_48px_1230490_easyicon.net.png); }
     .navbar .lianxi .weixing {
@@ -118,10 +113,6 @@ html, body {
 .weixing:hover .weixinger {
   opacity: 1;
   transition-duration: 1s; }
-
-.github:hover .giter {
-  opacity: 1;
-  transition: 1s; }
 
 .swiper-container {
   width: 100%;
@@ -148,7 +139,7 @@ html, body {
   border-radius: 20px;
   z-index: 10; }
 
-.personbox:hover {
+.firstpage:hover .personbox {
   box-shadow: 0px 0px 40px #fff;
   transition: 1s; }
 
@@ -189,7 +180,8 @@ html, body {
   width: 100%;
   height: 1200px;
   float: left;
-  opacity: 0.5; }
+  opacity: 0.5;
+  background-size: 100%; }
 
 .secondpage .headimg {
   position: absolute;
@@ -224,13 +216,21 @@ html, body {
 .thirdpage {
   height: 100%;
   width: 100%;
-  background-color: #ccc; }
+  background-color: #555; }
+  .thirdpage .imgbox3 img {
+    width: 100%;
+    height: 1200px;
+    float: left;
+    opacity: 0.5;
+    background-size: 100%; }
   .thirdpage .killbox {
     position: absolute;
     width: 800px;
     height: 500px;
     left: 50%;
     top: 50%;
+    background: rgba(204, 204, 204, 0.452);
+    border-radius: 20px;
     transform: translate(-50%, -50%); }
     .thirdpage .killbox .leftbox {
       width: 200px;
@@ -286,7 +286,43 @@ html, body {
 .fourthpage {
   height: 100%;
   width: 100%;
-  background-color: #fff; }
+  background-color: #555; }
+  .fourthpage .imgbox4 img {
+    width: 100%;
+    height: 1200px;
+    float: left;
+    opacity: 0.5;
+    background-size: 100%; }
+  .fourthpage .talkbox {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: #ccc;
+    margin: 0 auto;
+    top: 300px; }
+    .fourthpage .talkbox .broderleft {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 150px;
+      height: 50px;
+      border-top: 10px solid #faa23e;
+      border-right: 10px solid #faa23e; }
+    .fourthpage .talkbox .borderbotton {
+      position: absolute;
+      bottom: 0;
+      width: 380px;
+      height: 50px;
+      border-bottom: 10px solid #faa23e;
+      border-right: 10px solid #faa23e;
+      border-left: 10px solid #faa23e; }
+    .fourthpage .talkbox .talkmsg {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
 
 /*# sourceMappingURL=index.css.map */
 /* swiperyangshi*/
@@ -335,6 +371,7 @@ html, body {
     -moz-box-shadow: 0 0 0 10px rgba(37, 143, 184, 0);
     -ms-box-shadow: 0 0 0 10px rgba(37, 143, 184, 0);
     background: white; } }
+/* */
 .swiper-pagination1 .swiper-pagination-bullet:after {
   width: 6px;
   height: 6px;

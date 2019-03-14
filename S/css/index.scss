@@ -1,8 +1,10 @@
-@charset "utf-8";
+
 * {
   padding: 0;
   margin: 0; }
-a{text-decoration:none;}
+a{
+   text-decoration:none;
+}
 html, body {
   width: 100%;
   height: 100%; 
@@ -51,7 +53,7 @@ html, body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 280px;
+  width: 300px;
   height: 100%;
   background-color: #ddd;
   z-index: 20;
@@ -81,7 +83,7 @@ html, body {
     position: absolute;
     width: 300px;
     height: 300px;
-    bottom: 50px;
+    top: 700px;
       
     a{
       display: block;
@@ -90,12 +92,12 @@ html, body {
       height: 40px;
       background-size: 100%;
       margin-top: 220px;
-      margin-left: 42px;
+      margin-left: 48px;
       background-repeat: no-repeat;
       span{
         position: absolute;
         display: block;
-        left: 40px;
+        left: 56px;
         top: 0px;
         width: 200px;
         height: 200px;
@@ -108,12 +110,6 @@ html, body {
       }
       .weixinger{
         background-image: url(../img/weixingerweima.jpg);
-      }
-      .giter{
-        text-align: center;
-        line-height: 200px;
-        font-size: 20px;
-        color: rgb(62, 124, 240);
       }
     }
     .qq{
@@ -136,10 +132,6 @@ html, body {
 .weixing:hover .weixinger{
   opacity: 1;
   transition-duration:1s;
-}
-.github:hover .giter{
-  opacity: 1;
-  transition: 1s;
 }
 
 .swiper-container {
@@ -166,7 +158,7 @@ html, body {
   border-radius: 20px;
   z-index: 10;
 }
-.personbox:hover{
+.firstpage:hover .personbox{
     box-shadow: 0px 0px 40px #fff;
     transition: 1s;
 }
@@ -209,6 +201,7 @@ html, body {
     height: 1200px;;
     float: left;
     opacity: 0.5;
+    background-size: 100%;
 }
   .secondpage .headimg{
     position: absolute;
@@ -244,13 +237,22 @@ html, body {
 .thirdpage {
   height: 100%;
   width: 100%;
-  background-color: #ccc; 
+  background-color: #555;
+  .imgbox3 img{
+    width: 100%;
+    height: 1200px;
+    float: left;
+    opacity: 0.5;
+    background-size: 100%;
+  }
   .killbox{
     position: absolute;
     width: 800px;
     height: 500px;
     left: 50%;
     top: 50%;
+    background: rgba(204, 204, 204, 0.452);
+    border-radius: 20px;
     transform: translate(-50%,-50%);
     
     .leftbox{
@@ -323,7 +325,50 @@ html, body {
 .fourthpage {
   height: 100%;
   width: 100%;
-  background-color: #fff; }
+  background-color: #555;
+  .imgbox4 img{
+    width: 100%;
+    height: 1200px;
+    float: left;
+    opacity: 0.5;
+    background-size: 100%;
+  }
+  .talkbox{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: #ccc;
+    margin: 0 auto;
+    top: 300px;
+    .broderleft{
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 150px;
+      height: 50px;
+      border-top: 10px solid rgb(250, 162, 62); 
+      border-right: 10px solid rgb(250, 162, 62); 
+    }
+    .borderbotton{
+      position: absolute;
+      bottom: 0;
+      width: 380px;
+      height: 50px;
+      border-bottom: 10px solid rgb(250, 162, 62); 
+      border-right: 10px solid rgb(250, 162, 62); 
+      border-left: 10px solid rgb(250, 162, 62); 
+    }
+    .talkmsg{
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+  }
+
+}
 
 /*# sourceMappingURL=index.css.map */
 
@@ -373,6 +418,7 @@ z-index: 100;
       -ms-box-shadow:0 0 0 10px rgba(37, 143, 184, 0);
       background:rgba(255, 255, 255, 1)}
     }
+    /* */ 
 
 .swiper-pagination1 .swiper-pagination-bullet:after{
   width: 6px;

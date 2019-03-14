@@ -1,7 +1,9 @@
 var swiper = new Swiper('.swiper-container',{
-  hashNavigation: {
-    watchState: true,
-  },
+  mousewheel: true,
+  // slide 地址
+  // hashNavigation: {
+  //   watchState: true,
+  // },
   autoplay:false,
   direction: 'vertical',
     pagination: {
