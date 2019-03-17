@@ -75,7 +75,7 @@ html, body {
     position: absolute;
     width: 300px;
     height: 300px;
-    top: 700px; }
+    top: 70%; }
     .navbar .lianxi a {
       display: block;
       float: left;
@@ -111,6 +111,10 @@ html, body {
   transition-duration: 1s; }
 
 .weixing:hover .weixinger {
+  opacity: 1;
+  transition-duration: 1s; }
+
+.github:hover .giter {
   opacity: 1;
   transition-duration: 1s; }
 
@@ -242,7 +246,8 @@ html, body {
         margin-bottom: -20px; }
       .thirdpage .killbox .leftbox p {
         margin-top: 35px;
-        font-size: 34px; }
+        font-size: 34px;
+        color: #0d0a1a; }
     .thirdpage .killbox .killmessage {
       position: absolute;
       width: 500px;
@@ -428,5 +433,56 @@ html, body {
   margin-left: -3px;
   top: 50%;
   margin-top: -3px; }
+
+.musicbtn {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  top: 3%;
+  right: 3%;
+  z-index: 100;
+  border-radius: 50%;
+  animation: musicmove 10s infinite linear;
+  background-image: url(../img/bg1.jpeg);
+  background-size: 100%; }
+  .musicbtn .stopbtn {
+    display: none; }
+    .musicbtn .stopbtn .stopicon {
+      position: absolute;
+      background: #ddd;
+      width: 5px;
+      height: 20px;
+      top: 50%;
+      left: 39%;
+      border-radius: 3px;
+      transform: translate(-50%, -50%); }
+    .musicbtn .stopbtn .stopicon:after {
+      content: "";
+      position: absolute;
+      background: #ddd;
+      width: 5px;
+      height: 20px;
+      top: 50%;
+      left: 15px;
+      border-radius: 3px;
+      transform: translate(-50%, -50%); }
+  .musicbtn .starbtn {
+    display: none; }
+    .musicbtn .starbtn .staricon {
+      position: absolute;
+      top: 50%;
+      left: 55%;
+      transform: translate(-50%, -50%);
+      width: 0;
+      height: 0;
+      border-top: 10px solid transparent;
+      border-left: 15px solid #ccc;
+      border-bottom: 10px solid transparent; }
+
+@keyframes musicmove {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
 
 /*# sourceMappingURL=index.css.map */

@@ -83,7 +83,7 @@ html, body {
     position: absolute;
     width: 300px;
     height: 300px;
-    top: 700px;
+    top: 70%;
       
     a{
       display: block;
@@ -130,6 +130,10 @@ html, body {
   transition-duration:1s;
 }
 .weixing:hover .weixinger{
+  opacity: 1;
+  transition-duration:1s;
+}
+.github:hover .giter{
   opacity: 1;
   transition-duration:1s;
 }
@@ -267,7 +271,7 @@ html, body {
       p{
         margin-top: 35px;
         font-size: 34px;
-
+        color: rgb(13, 10, 26);
       }
     }
     .killmessage{
@@ -488,4 +492,58 @@ z-index: 100;
     margin-left: -3px;
     top: 50%;
     margin-top: -3px;
+}
+.musicbtn{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  top: 3%;
+  right: 3%;
+  z-index: 100;
+  border-radius: 50%;
+  animation: musicmove 10s infinite linear;
+  background-image: url(../img/bg1.jpeg);
+  background-size: 100%;
+  .stopbtn{
+    display: none;
+    .stopicon{
+      position: absolute;
+      background: #ddd;
+      width: 5px;
+      height: 20px;
+      top: 50%;
+      left: 39%;
+      border-radius: 3px;
+      transform: translate(-50%,-50%);
+    }
+    .stopicon:after{
+      content:"";
+      position: absolute;
+      background: #ddd;
+      width: 5px;
+      height: 20px;
+      top: 50%;
+      left: 15px;
+      border-radius: 3px;
+      transform: translate(-50%,-50%);
+    }
+  }
+  .starbtn{
+    display: none;
+    .staricon{
+      position: absolute;
+      top: 50%;
+      left: 55%;
+      transform: translate(-50%,-50%);
+      width: 0;
+      height: 0;
+      border-top: 10px solid transparent;
+    border-left: 15px solid #ccc;
+    border-bottom: 10px solid transparent;
+    }
+  }
+}
+@keyframes musicmove{
+  from{transform: rotate(0deg)}
+  to{transform: rotate(360deg)}
 }
