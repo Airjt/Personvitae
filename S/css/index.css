@@ -141,7 +141,8 @@ html, body {
   margin-top: -120px;
   padding: 0px 20px;
   border-radius: 20px;
-  z-index: 10; }
+  z-index: 10;
+  animation: pulse 4s infinite linear; }
 
 .firstpage:hover .personbox {
   box-shadow: 0px 0px 40px #fff;
@@ -206,15 +207,16 @@ html, body {
 .secondpage .message {
   position: absolute;
   border-radius: 10px;
-  width: 600px;
+  width: 800px;
   height: 200px;
   left: 50%;
   top: 50%;
-  margin-left: -300px;
+  margin-left: -400px;
   text-align: center; }
 
 .message p {
-  font-size: 24px;
+  line-height: 40px;
+  font-size: 20px;
   color: #ccc; }
 
 .thirdpage {
@@ -484,5 +486,34 @@ html, body {
     transform: rotate(0deg); }
   to {
     transform: rotate(360deg); } }
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+  50% {
+    -webkit-transform: scale3d(1.02, 1.02, 1.02);
+    transform: scale3d(1.02, 1.02, 1.02); }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+  50% {
+    -webkit-transform: scale3d(1.02, 1.02, 1.02);
+    transform: scale3d(1.02, 1.02, 1.02); }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-60%, -50%, 0);
+    transform: translate3d(-60%, -50%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0); } }
 
 /*# sourceMappingURL=index.css.map */

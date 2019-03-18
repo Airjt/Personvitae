@@ -11,7 +11,9 @@
     <script src="./lib/swiper.min.js"></script>
     <!-- Start WOWSlider.com HEAD section -->
     <!-- add to the <head> of your page -->
+    <link rel="stylesheet" href="lib/animate.min.css">
     <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+    <script type="text/javascript" src="./lib/swiper.animate1.0.3.min.js"></script>
     <script type="text/javascript" src="engine1/jquery.js"></script>
     <!-- End WOWSlider.com HEAD section -->
 </head>
@@ -21,7 +23,7 @@
         <div class="icon"></div>
     </div>
     <div class="musicplay">
-        <audio src="./vido/4円 - アイロニ.mp3" autoplay="autoplay"></audio>
+        <audio id="musicaduio" src="./vido/4円 - アイロニ.mp3" autoplay="autoplay"></audio>
     </div>
     <div class="musicbtn">
         <span class="stopbtn">
@@ -93,17 +95,14 @@
                     <div class="headimg">
                     </div>
                     <div class="message">
-                        <p> xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
-                        <p> xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
-                        <p> xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
-                        <p> xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+                        <p> 我叫xxx，22岁，坐标杭州，是一名前端工程师。能够使用h5和css3制作相应的设计界面，熟练jq和原生js，熟练使用webpack构建工具，熟悉Vue框架进行开发 </p>
                     </div>
                 </div>
                 <div class="thirdpage swiper-slide" data-hash="slide3">
                     <div class="imgbox3">
                         <img src="./img/cc992096624766143a9d2f569b680fcf.jpeg" alt="">
                     </div>
-                    <div class="killbox">
+                    <div class="killbox ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
                         <div class="leftbox">
                             <h1>Kill:</h1>
                             <p>Html</p>
